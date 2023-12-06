@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo</title>
+    <style>
+         p{
+            text-transform: uppercase;
+            color: black;
+            font-size: 15px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: bold;
+            text-align: center;
+        }
+        .to_do{
+            margin-left: 30px;
+            padding-top: 5px;
+            background-color: whitesmoke;
+            height: 400px;
+            width: 400px;
+            border-radius: 10px;
+            border-left: blueviolet 4px solid;
+            border-top: blueviolet 4px solid;
+        }
+        .toggleElement{
+            font-size: 25px;
+            line-height: 2;
+            text-decoration:none;
+            
+        }
+        .mybtn{
+            padding: 5px;
+            margin: 25px;
+            margin-top: -3px;
+            width: 90px;
+            background-color: cornflowerblue;
+            border: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="to_do">
+        <p>My to_do list for the week end.</p>
+       <ol id="elementTotoggle" class="toggleElement">
+           <li>Solving js algorithms</li>
+           <li>Making a good css design</li>
+           <li>Sovling some codingjs problems</li>
+           <li>Watching 5 videos on Javascript</li>
+           <li>Resting for 2hrs</li>
+       </ol>
+       <button id="toggleButton" class="mybtn">Done</button>
+   </div>
+   <script src="js/Todo.js"></script>
+
+</body>
+</html>
