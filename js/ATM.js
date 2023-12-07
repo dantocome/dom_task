@@ -15,7 +15,12 @@ function Withdrawal(){
         let remainingBalance = balance-withdraw;
         alert("You have successfully withdrawn "+ withdraw + " from your account.");
         document.getElementById("balance").value = remainingBalance;
+        balance.classList.add("withrawal_form");
+
+
     }else{
         document.getElementById("error").innerHTML = "insufficent fund";
+
+
     }
 }
