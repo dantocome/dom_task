@@ -13,6 +13,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 //    });
 });
 
+document.addEventListener("DOMContentLoaded", ()=>{
+    const to_do = document.querySelector(".to_do");
+    to_do.addEventListener("Done", (event)=>{
+        event.preventDefault();
+        myTodoList();
+    })
+})
+
 function myTodoList(){
     const elementTotoggle = document.getElementById("elementTotoggle");
     const toggleButton = document.getElementById("toggleButton");
