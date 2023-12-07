@@ -6,17 +6,21 @@
     <title>Bank Transaction</title>
 </head>
 <body>
+    <div id="withrawal_form">
     <p>
         Cash Withdrawer Point:
     </p>
-    <div class="chash">
+         <div id ="cash_form">
         <p>
-            <label for="">Balance:&nbsp;</label><input type="number" readonly value="50,000" id="balance">
+            <label for="">Balance:</label><input type="number" readonly value="50000" id="balance">
         </p>
         <p>
-            <label for="">Withdrawer:&nbsp;</label><input type="withdrawer" id="withraw"><span style="color:red" id="error"></span>
+            <label for="">Withdrawer Amount:&nbsp;</label><input type="number" id="withdraw"><span style="color:red" id="error"></span>
         </p>
+        <button id="send" onclick="Withdrawal()">Send</button>
+        </div>
     </div>
+    <script src="js/ATM.js"></script>
     
 </body>
 </html>

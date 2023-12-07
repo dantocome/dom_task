@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 });
 
 document.addEventListener("DOMContentLoaded", ()=>{
-    const to_do = document.querySelector(".to_do");
+    const to_do = document.getElementById("elementTotoggle");
     to_do.addEventListener("Done", (event)=>{
         event.preventDefault();
         myTodoList();
