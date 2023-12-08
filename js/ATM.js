@@ -14,6 +14,7 @@ function Withdrawal(){
     let para = document.getElementById("para1");
     let para2 = document.getElementById("para2");
     let color = document.getElementById("color");
+    let bala = document.getElementById("bala");
 
     if(withdraw<=balance){
         let remainingBalance = balance-withdraw;
@@ -24,10 +25,11 @@ function Withdrawal(){
         para.classList.add("para1")
         para2.classList.add("para2");
         color.classList.add("color");
+        bala.classList.add("bala");
 
 
     }else{
-        document.getElementById("error").innerHTML = "insufficent fund";
+        document.getElementById("error").innerHTML =  alert("insufficeint funds");
 
 
     }

@@ -10,10 +10,13 @@
             background-color: rgb(148, 148, 229);
             height: 500px;
             width: 410px;
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
             
         }
         #cash_form{
-            
+            text-align: center;
+            padding-top: 20px;
         }
         #para1{
             font-size: 22px;
@@ -23,6 +26,7 @@
             color: whitesmoke;
             font-weight: bold;
             text-align: center;
+            
         }
         #para2{
             color: darkblue;
@@ -30,24 +34,40 @@
             text-transform: lowercase;
         }
         #color{
-            background-color: violet
+            background-color: violet;
+            height: 100px;
+            border-radius: 20px;
         }
+        #bala{
+            color: darkblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+        input[type="number"]{
+            height: 40px;
+            
+        }
+       
     </style>
 </head>
 <body>
     <div id="withdrawal_form">
-        <div id="color">
+    
+    <div id="color">
     <p id="para1">
         Cash Withdrawer Point:
     <span id="para2">(Transactions above 50000, is not adviceable)</span>
     </p>
     </div>
+    
          <div id ="cash_form">
         <p>
-            <label for="">Balance:</label><input type="number" readonly value="50000" id="balance">
+            <p id="bala">Available Balance:</p>
+         <input type="number" readonly value="50000" id="balance">
         </p>
         <p>
-            <label for="">Withdrawer Amount:&nbsp;</label><input type="number" id="withdraw"><span style="color:red" id="error"></span>
+            <p id="bala">Withdrawer Amount:</p>
+            <input type="number" id="withdraw"><span style="color:red" id="error"></span>
         </p>
         <button id="send" onclick="Withdrawal()">Send</button>
         </div>
