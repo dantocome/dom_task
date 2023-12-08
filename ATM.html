@@ -43,9 +43,25 @@
             font-family:Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
         }
+        #ba{
+            color: darkblue;
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
         input[type="number"]{
             height: 40px;
             
+        }
+        #send{
+            background-color: rgb(147, 231, 189);
+            width: 80px;
+            height: 30px;
+            font-size: medium;
+            font-weight: bold;
+            color: darkblue;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border: none;
+            border-radius: 5px;
         }
        
     </style>
@@ -66,7 +82,7 @@
          <input type="number" readonly value="50000" id="balance">
         </p>
         <p>
-            <p id="bala">Withdrawer Amount:</p>
+            <p id="ba">Withdrawer Amount:</p>
             <input type="number" id="withdraw"><span style="color:red" id="error"></span>
         </p>
         <button id="send" onclick="Withdrawal()">Send</button>

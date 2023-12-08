@@ -15,6 +15,8 @@ function Withdrawal(){
     let para2 = document.getElementById("para2");
     let color = document.getElementById("color");
     let bala = document.getElementById("bala");
+    let button = document.getElementById("send");
+    let ba = document.getElementById("ba");
 
     if(withdraw<=balance){
         let remainingBalance = balance-withdraw;
@@ -26,6 +28,8 @@ function Withdrawal(){
         para2.classList.add("para2");
         color.classList.add("color");
         bala.classList.add("bala");
+        button.classList.add("send");
+        ba.classList.add("ba")
 
 
     }else{
