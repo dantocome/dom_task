@@ -13,13 +13,13 @@ document.addEventListener("DOMContentLoaded",()=>{
 //    });
 });
 
-document.addEventListener("DOMContentLoaded", ()=>{
-    const to_do = document.getElementById("elementTotoggle");
-    to_do.addEventListener("Done", (event)=>{
-        event.preventDefault();
-        myTodoList();
-    })
-})
+// document.addEventListener("DOMContentLoaded", ()=>{
+//     const to_do = document.getElementById("elementTotoggle");
+//     to_do.addEventListener("Done", (event)=>{
+//         event.preventDefault();
+//         myTodoList();
+//     })
+// })
 
 function myTodoList(){
     const elementTotoggle = document.getElementById("elementTotoggle");
