@@ -29,11 +29,12 @@ function Withdrawal(){
         color.classList.add("color");
         bala.classList.add("bala");
         button.classList.add("send");
-        ba.classList.add("ba")
+        ba.classList.add()
 
 
     }else{
-        document.getElementById("error").innerHTML =  alert("insufficeint funds");
+        document.getElementById("error").innerHTML;
+        alert("insufficeint funds");
 
 
     }
